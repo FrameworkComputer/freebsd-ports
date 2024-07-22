@@ -1,0 +1,2 @@
+bin/mokutil
+etc/bash_completion.d/mokutil-completion.bash
