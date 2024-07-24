@@ -1,0 +1,10 @@
+--- src/meson.build.orig	2024-07-24 21:50:37 UTC
++++ src/meson.build
+@@ -26,7 +26,6 @@ fprintd_dbus_sources += custom_target('fprintd-dbus-in
+     command: [
+         find_program('patch'),
+         '-p1',
+-        '--merge',
+         '@INPUT@',
+         files('dbus-interactive-auth.patch'),
+         '-o', '@OUTPUT@',
