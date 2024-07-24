@@ -1180,6 +1180,7 @@
     SUBDIR += qjail
     SUBDIR += qjail54
     SUBDIR += qlogtools
+    SUBDIR += qmk_hid
     SUBDIR += qsudo
     SUBDIR += qt5-qtdiag
     SUBDIR += qt5-qtpaths
