@@ -17,11 +17,16 @@ LIB_DEPENDS=	libfprint-2.so:security/libfprint \
 		libpolkit-gobject-1.so:sysutils/polkit
 
 USES=		gettext gmake gnome libtool pkgconfig meson
+USE_RC_SUBR=	fprintd
 USE_GNOME=	intltool glib20
 
-USE_GITLAB=	yes
-GL_SITE=	https://gitlab.freedesktop.org
-GL_ACCOUNT=	libfprint
+#USE_GITLAB=	yes
+#GL_SITE=	https://gitlab.freedesktop.org
+#GL_ACCOUNT=	libfprint
+# Temporarily use fork with fixes
+USE_GITHUB=	yes
+GH_ACCOUNT=	FrameworkComputer
+GH_TAGNAME=	7b8323d447cff20b2543d08f4768aeb29c3b244a
 
 MESON_ARGS=	-Dlibsystemd=basu -Dsystemd=false -Dopenpam=true -Dpam_modules_dir=${PREFIX}/lib
 
